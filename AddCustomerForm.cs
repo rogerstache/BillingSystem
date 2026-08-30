@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BillingSystem
 {
-    public partial class AddCustomerForm : Form
+    public partial class AddCustomerForm_Navea : Form
     {
-        public AddCustomerForm()
+        public AddCustomerForm_Navea()
         {
             InitializeComponent();
         }
