@@ -1,6 +1,6 @@
 ﻿namespace BillingSystem
 {
-    partial class LoginForm_Conflict
+    partial class LoginForm_Conflictnabapls
     {
         /// <summary>
         /// Required designer variable.
@@ -122,7 +122,7 @@
             label1.TextAlign = ContentAlignment.TopCenter;
             label1.Click += lblTitle_Click;
             // 
-            // LoginForm_Conflict
+            // LoginForm_Conflictnabapls
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -138,7 +138,7 @@
             Controls.Add(lblTitle);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "LoginForm_Conflict";
+            Name = "LoginForm_Conflictnabapls";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Billing System - Login";
             Load += LoginForm_Load;
