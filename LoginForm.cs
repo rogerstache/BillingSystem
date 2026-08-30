@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BillingSystem
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm_Pacayra : Form
     {
-        public LoginForm()
+        public LoginForm_Pacayra()
         {
             InitializeComponent();
         }
