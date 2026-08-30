@@ -34,7 +34,7 @@
             lblContact = new Label();
             lblBalance = new Label();
             lblEmail = new Label();
-            txtFullName = new TextBox();
+            txtFullName_Navea = new TextBox();
             txtAddress = new TextBox();
             txtContact = new TextBox();
             txtEmail = new TextBox();
@@ -106,14 +106,14 @@
             lblEmail.TabIndex = 5;
             lblEmail.Text = "Email:";
             // 
-            // txtFullName
+            // txtFullName_Navea
             // 
-            txtFullName.Font = new Font("Microsoft Sans Serif", 9F);
-            txtFullName.Location = new Point(191, 94);
-            txtFullName.Name = "txtFullName";
-            txtFullName.Size = new Size(205, 24);
-            txtFullName.TabIndex = 6;
-            txtFullName.Text = "Jian Paolo F. Navea";
+            txtFullName_Navea.Font = new Font("Microsoft Sans Serif", 9F);
+            txtFullName_Navea.Location = new Point(191, 94);
+            txtFullName_Navea.Name = "txtFullName_Navea";
+            txtFullName_Navea.Size = new Size(205, 24);
+            txtFullName_Navea.TabIndex = 6;
+            txtFullName_Navea.TextChanged += txtFullName_TextChanged;
             // 
             // txtAddress
             // 
@@ -192,7 +192,7 @@
             Controls.Add(txtEmail);
             Controls.Add(txtContact);
             Controls.Add(txtAddress);
-            Controls.Add(txtFullName);
+            Controls.Add(txtFullName_Navea);
             Controls.Add(lblEmail);
             Controls.Add(lblBalance);
             Controls.Add(lblContact);
@@ -216,7 +216,7 @@
         private Label lblContact;
         private Label lblBalance;
         private Label lblEmail;
-        private TextBox txtFullName;
+        private TextBox txtFullName_Navea;
         private TextBox txtAddress;
         private TextBox txtContact;
         private TextBox txtEmail;

@@ -31,5 +31,10 @@ namespace BillingSystem
         {
 
         }
+
+        private void txtFullName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
