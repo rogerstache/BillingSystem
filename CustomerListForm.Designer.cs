@@ -1,6 +1,6 @@
 ﻿namespace BillingSystem
 {
-    partial class CustomerListForm
+    partial class CustomerListForm_Medrano
     {
         /// <summary>
         /// Required designer variable.
@@ -47,10 +47,10 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Montserrat", 14F, FontStyle.Bold);
+            lblTitle.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
             lblTitle.Location = new Point(57, 43);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(190, 38);
+            lblTitle.Size = new Size(173, 29);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Customer List";
             lblTitle.Click += label1_Click;
@@ -113,7 +113,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Font = new Font("Montserrat", 9F);
+            btnAdd.Font = new Font("Microsoft Sans Serif", 9F);
             btnAdd.Location = new Point(183, 365);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(94, 29);
@@ -123,7 +123,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Font = new Font("Montserrat", 9F);
+            btnDelete.Font = new Font("Microsoft Sans Serif", 9F);
             btnDelete.Location = new Point(344, 365);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
@@ -133,7 +133,7 @@
             // 
             // btnLogout
             // 
-            btnLogout.Font = new Font("Montserrat", 9F);
+            btnLogout.Font = new Font("Microsoft Sans Serif", 9F);
             btnLogout.Location = new Point(505, 365);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(94, 29);
@@ -143,16 +143,16 @@
             // 
             // txtSearch
             // 
-            txtSearch.Font = new Font("Montserrat", 9F);
+            txtSearch.Font = new Font("Microsoft Sans Serif", 9F);
             txtSearch.Location = new Point(305, 45);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(307, 26);
+            txtSearch.Size = new Size(307, 25);
             txtSearch.TabIndex = 5;
             txtSearch.TextChanged += textBox1_TextChanged;
             // 
             // btnSearch
             // 
-            btnSearch.Font = new Font("Montserrat", 9F);
+            btnSearch.Font = new Font("Microsoft Sans Serif", 9F);
             btnSearch.Location = new Point(638, 43);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(90, 29);
@@ -161,7 +161,7 @@
             btnSearch.UseVisualStyleBackColor = true;
             btnSearch.Click += btnSearch_Click;
             // 
-            // CustomerListForm
+            // CustomerListForm_Medrano
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -173,7 +173,7 @@
             Controls.Add(btnAdd);
             Controls.Add(dgvCustomers);
             Controls.Add(lblTitle);
-            Name = "CustomerListForm";
+            Name = "CustomerListForm_Medrano";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Billing System - Customer List";
             Load += AddCustomerForm_Load;
