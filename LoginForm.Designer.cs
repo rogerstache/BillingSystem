@@ -1,6 +1,6 @@
 ﻿namespace BillingSystem
 {
-    partial class LoginForm
+    partial class LoginForm_Justin
     {
         /// <summary>
         /// Required designer variable.
@@ -42,10 +42,10 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.BackColor = SystemColors.Control;
-            lblTitle.Font = new Font("Montserrat", 14F, FontStyle.Bold);
+            lblTitle.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
             lblTitle.Location = new Point(76, 32);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(224, 38);
+            lblTitle.Size = new Size(223, 29);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "BILLING SYSTEM";
             lblTitle.TextAlign = ContentAlignment.TopCenter;
@@ -54,10 +54,10 @@
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Montserrat", 9F);
+            lblUsername.Font = new Font("Microsoft Sans Serif", 9F);
             lblUsername.Location = new Point(49, 91);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(91, 24);
+            lblUsername.Size = new Size(81, 18);
             lblUsername.TabIndex = 1;
             lblUsername.Text = "Username:";
             lblUsername.Click += lblUsername_Click;
@@ -65,16 +65,16 @@
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Font = new Font("Montserrat", 9F);
+            lblPassword.Font = new Font("Microsoft Sans Serif", 9F);
             lblPassword.Location = new Point(54, 139);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(85, 24);
+            lblPassword.Size = new Size(79, 18);
             lblPassword.TabIndex = 2;
             lblPassword.Text = "Password:";
             // 
             // btnLogin
             // 
-            btnLogin.Font = new Font("Montserrat", 9F);
+            btnLogin.Font = new Font("Microsoft Sans Serif", 9F);
             btnLogin.Location = new Point(76, 185);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(94, 29);
@@ -84,7 +84,7 @@
             // 
             // btnCancel
             // 
-            btnCancel.Font = new Font("Montserrat", 9F);
+            btnCancel.Font = new Font("Microsoft Sans Serif", 9F);
             btnCancel.Location = new Point(205, 185);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(94, 29);
@@ -94,20 +94,20 @@
             // 
             // txtUsername
             // 
-            txtUsername.Font = new Font("Montserrat", 9F);
+            txtUsername.Font = new Font("Microsoft Sans Serif", 9F);
             txtUsername.Location = new Point(159, 88);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(161, 26);
+            txtUsername.Size = new Size(161, 24);
             txtUsername.TabIndex = 6;
             txtUsername.TextChanged += txtUsername_TextChanged;
             // 
             // txtPassword
             // 
-            txtPassword.Font = new Font("Montserrat", 9F);
+            txtPassword.Font = new Font("Microsoft Sans Serif", 9F);
             txtPassword.Location = new Point(159, 136);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(161, 26);
+            txtPassword.Size = new Size(161, 24);
             txtPassword.TabIndex = 7;
             // 
             // label1
@@ -122,7 +122,7 @@
             label1.TextAlign = ContentAlignment.TopCenter;
             label1.Click += lblTitle_Click;
             // 
-            // LoginForm
+            // LoginForm_Justin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -138,7 +138,7 @@
             Controls.Add(lblTitle);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "LoginForm";
+            Name = "LoginForm_Justin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Billing System - Login";
             Load += LoginForm_Load;
