@@ -1,6 +1,6 @@
 ﻿namespace BillingSystem
 {
-    partial class LoginForm_magkaconflictknapls
+    partial class GumanaKaNaPLS
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,7 @@
             lblUsername.Font = new Font("Microsoft Sans Serif", 9F);
             lblUsername.Location = new Point(49, 91);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(81, 18);
+            lblUsername.Size = new Size(87, 20);
             lblUsername.TabIndex = 1;
             lblUsername.Text = "Username:";
             lblUsername.Click += lblUsername_Click;
@@ -68,7 +68,7 @@
             lblPassword.Font = new Font("Microsoft Sans Serif", 9F);
             lblPassword.Location = new Point(54, 139);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(79, 18);
+            lblPassword.Size = new Size(82, 20);
             lblPassword.TabIndex = 2;
             lblPassword.Text = "Password:";
             // 
@@ -97,7 +97,7 @@
             txtUsername.Font = new Font("Microsoft Sans Serif", 9F);
             txtUsername.Location = new Point(159, 88);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(161, 24);
+            txtUsername.Size = new Size(161, 25);
             txtUsername.TabIndex = 6;
             txtUsername.TextChanged += txtUsername_TextChanged;
             // 
@@ -107,7 +107,7 @@
             txtPassword.Location = new Point(159, 136);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(161, 24);
+            txtPassword.Size = new Size(161, 25);
             txtPassword.TabIndex = 7;
             // 
             // label1
@@ -122,7 +122,7 @@
             label1.TextAlign = ContentAlignment.TopCenter;
             label1.Click += lblTitle_Click;
             // 
-            // LoginForm_magkaconflictknapls
+            // GumanaKaNaPLS
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -138,7 +138,7 @@
             Controls.Add(lblTitle);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "LoginForm_magkaconflictknapls";
+            Name = "GumanaKaNaPLS";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Billing System - Login";
             Load += LoginForm_Load;
