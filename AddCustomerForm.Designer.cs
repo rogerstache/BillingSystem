@@ -157,6 +157,7 @@
             btnSave.TabIndex = 11;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnClear
             // 
@@ -203,6 +204,7 @@
             Name = "AddCustomerForm_Navea";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Billing System - Add Customer";
+            Load += AddCustomerForm_Navea_Load;
             ResumeLayout(false);
             PerformLayout();
         }

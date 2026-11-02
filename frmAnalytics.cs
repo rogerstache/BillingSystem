@@ -233,5 +233,10 @@ namespace BillingSystem
         {
             this.Close();
         }
+
+        private void plotPaidUnpaid_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

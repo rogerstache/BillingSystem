@@ -47,7 +47,7 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(374, 54);
+            lblTitle.Location = new Point(372, 28);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(234, 31);
             lblTitle.TabIndex = 0;
@@ -56,7 +56,7 @@
             // lblTotalCustomers
             // 
             lblTotalCustomers.AutoSize = true;
-            lblTotalCustomers.Location = new Point(127, 128);
+            lblTotalCustomers.Location = new Point(127, 100);
             lblTotalCustomers.Name = "lblTotalCustomers";
             lblTotalCustomers.Size = new Size(130, 20);
             lblTotalCustomers.TabIndex = 1;
@@ -65,7 +65,7 @@
             // lblTotalRevenue
             // 
             lblTotalRevenue.AutoSize = true;
-            lblTotalRevenue.Location = new Point(419, 128);
+            lblTotalRevenue.Location = new Point(419, 100);
             lblTotalRevenue.Name = "lblTotalRevenue";
             lblTotalRevenue.Size = new Size(145, 20);
             lblTotalRevenue.TabIndex = 2;
@@ -74,7 +74,7 @@
             // lblTotalUnpaid
             // 
             lblTotalUnpaid.AutoSize = true;
-            lblTotalUnpaid.Location = new Point(710, 128);
+            lblTotalUnpaid.Location = new Point(710, 100);
             lblTotalUnpaid.Name = "lblTotalUnpaid";
             lblTotalUnpaid.Size = new Size(137, 20);
             lblTotalUnpaid.TabIndex = 3;
@@ -82,17 +82,18 @@
             // 
             // plotMonthlyRevenue
             // 
-            plotMonthlyRevenue.Location = new Point(106, 169);
+            plotMonthlyRevenue.Location = new Point(127, 123);
             plotMonthlyRevenue.Name = "plotMonthlyRevenue";
-            plotMonthlyRevenue.Size = new Size(346, 186);
+            plotMonthlyRevenue.Size = new Size(332, 232);
             plotMonthlyRevenue.TabIndex = 4;
             // 
             // plotPaidUnpaid
             // 
-            plotPaidUnpaid.Location = new Point(501, 169);
+            plotPaidUnpaid.Location = new Point(525, 123);
             plotPaidUnpaid.Name = "plotPaidUnpaid";
-            plotPaidUnpaid.Size = new Size(370, 186);
+            plotPaidUnpaid.Size = new Size(346, 232);
             plotPaidUnpaid.TabIndex = 5;
+            plotPaidUnpaid.Load += plotPaidUnpaid_Load;
             // 
             // lblTop5Title
             // 

@@ -1,3 +1,3 @@
 <Solution>
-  <Project Path="../APPDEV/BillingSystem/BillingSystem/BillingSystem.csproj" />
+  <Project Path="BillingSystem.csproj" />
 </Solution>

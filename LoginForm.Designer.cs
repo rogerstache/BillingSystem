@@ -57,7 +57,7 @@
             lblUsername.Font = new Font("Microsoft Sans Serif", 9F);
             lblUsername.Location = new Point(49, 91);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(87, 20);
+            lblUsername.Size = new Size(81, 18);
             lblUsername.TabIndex = 1;
             lblUsername.Text = "Username:";
             lblUsername.Click += lblUsername_Click;
@@ -68,7 +68,7 @@
             lblPassword.Font = new Font("Microsoft Sans Serif", 9F);
             lblPassword.Location = new Point(54, 139);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(82, 20);
+            lblPassword.Size = new Size(79, 18);
             lblPassword.TabIndex = 2;
             lblPassword.Text = "Password:";
             // 
@@ -81,6 +81,7 @@
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // btnCancel
             // 
@@ -97,7 +98,7 @@
             txtUsername.Font = new Font("Microsoft Sans Serif", 9F);
             txtUsername.Location = new Point(159, 88);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(161, 25);
+            txtUsername.Size = new Size(161, 24);
             txtUsername.TabIndex = 6;
             txtUsername.TextChanged += txtUsername_TextChanged;
             // 
@@ -107,7 +108,7 @@
             txtPassword.Location = new Point(159, 136);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(161, 25);
+            txtPassword.Size = new Size(161, 24);
             txtPassword.TabIndex = 7;
             // 
             // label1
