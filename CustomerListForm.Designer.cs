@@ -47,13 +47,14 @@
             btnExportExcel = new Button();
             btnExportPDF = new Button();
             btnAuditLog = new Button();
-            button1 = new Button();
             btnManagePermissions = new Button();
             statusStrip3 = new StatusStrip();
             lblStatusTime = new ToolStripStatusLabel();
             lblStatusSep = new ToolStripStatusLabel();
             lblStatusUser = new ToolStripStatusLabel();
             statusTimer = new System.Windows.Forms.Timer(components);
+            btnChangePassword = new Button();
+            btnViewBilling = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).BeginInit();
             statusStrip3.SuspendLayout();
             SuspendLayout();
@@ -75,6 +76,7 @@
             dgvCustomers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCustomers.Columns.AddRange(new DataGridViewColumn[] { CustomerID, FullName, Address, ContactNumber, Email, Balance, Status });
             dgvCustomers.Location = new Point(12, 115);
+            dgvCustomers.MultiSelect = false;
             dgvCustomers.Name = "dgvCustomers";
             dgvCustomers.ReadOnly = true;
             dgvCustomers.RowHeadersWidth = 51;
@@ -138,9 +140,9 @@
             // btnAdd
             // 
             btnAdd.Font = new Font("Microsoft Sans Serif", 9F);
-            btnAdd.Location = new Point(38, 326);
+            btnAdd.Location = new Point(34, 319);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(159, 35);
+            btnAdd.Size = new Size(159, 28);
             btnAdd.TabIndex = 2;
             btnAdd.Text = "Add Customer";
             btnAdd.UseVisualStyleBackColor = true;
@@ -149,9 +151,9 @@
             // btnDelete
             // 
             btnDelete.Font = new Font("Microsoft Sans Serif", 9F);
-            btnDelete.Location = new Point(223, 326);
+            btnDelete.Location = new Point(34, 351);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(159, 35);
+            btnDelete.Size = new Size(159, 28);
             btnDelete.TabIndex = 3;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
@@ -160,9 +162,9 @@
             // btnLogout
             // 
             btnLogout.Font = new Font("Microsoft Sans Serif", 9F);
-            btnLogout.Location = new Point(585, 379);
+            btnLogout.Location = new Point(581, 353);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(164, 34);
+            btnLogout.Size = new Size(164, 26);
             btnLogout.TabIndex = 4;
             btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = true;
@@ -192,9 +194,9 @@
             // btnAnalytics
             // 
             btnAnalytics.Font = new Font("Microsoft Sans Serif", 9F);
-            btnAnalytics.Location = new Point(402, 326);
+            btnAnalytics.Location = new Point(34, 385);
             btnAnalytics.Name = "btnAnalytics";
-            btnAnalytics.Size = new Size(159, 35);
+            btnAnalytics.Size = new Size(159, 28);
             btnAnalytics.TabIndex = 7;
             btnAnalytics.Text = "Analytics";
             btnAnalytics.UseVisualStyleBackColor = true;
@@ -203,9 +205,9 @@
             // btnExportExcel
             // 
             btnExportExcel.Font = new Font("Microsoft Sans Serif", 9F);
-            btnExportExcel.Location = new Point(38, 378);
+            btnExportExcel.Location = new Point(219, 319);
             btnExportExcel.Name = "btnExportExcel";
-            btnExportExcel.Size = new Size(159, 35);
+            btnExportExcel.Size = new Size(159, 45);
             btnExportExcel.TabIndex = 8;
             btnExportExcel.Text = "Export to Excel";
             btnExportExcel.UseVisualStyleBackColor = true;
@@ -214,9 +216,9 @@
             // btnExportPDF
             // 
             btnExportPDF.Font = new Font("Microsoft Sans Serif", 9F);
-            btnExportPDF.Location = new Point(223, 378);
+            btnExportPDF.Location = new Point(219, 370);
             btnExportPDF.Name = "btnExportPDF";
-            btnExportPDF.Size = new Size(159, 35);
+            btnExportPDF.Size = new Size(159, 43);
             btnExportPDF.TabIndex = 9;
             btnExportPDF.Text = "Export to PDF";
             btnExportPDF.UseVisualStyleBackColor = true;
@@ -224,26 +226,19 @@
             // 
             // btnAuditLog
             // 
-            btnAuditLog.Location = new Point(402, 378);
+            btnAuditLog.Location = new Point(401, 370);
             btnAuditLog.Name = "btnAuditLog";
-            btnAuditLog.Size = new Size(159, 35);
+            btnAuditLog.Size = new Size(154, 43);
             btnAuditLog.TabIndex = 10;
             btnAuditLog.Text = "Audit Log";
             btnAuditLog.UseVisualStyleBackColor = true;
             btnAuditLog.Click += btnAuditLog_Click;
             // 
-            // button1
-            // 
-            button1.Location = new Point(0, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            // 
             // btnManagePermissions
             // 
-            btnManagePermissions.Location = new Point(585, 326);
+            btnManagePermissions.Location = new Point(581, 319);
             btnManagePermissions.Name = "btnManagePermissions";
-            btnManagePermissions.Size = new Size(164, 35);
+            btnManagePermissions.Size = new Size(164, 27);
             btnManagePermissions.TabIndex = 11;
             btnManagePermissions.Text = "Manage Permissions";
             btnManagePermissions.UseVisualStyleBackColor = true;
@@ -283,14 +278,35 @@
             statusTimer.Interval = 1000;
             statusTimer.Tick += statusTimer_Tick;
             // 
+            // btnChangePassword
+            // 
+            btnChangePassword.Location = new Point(581, 385);
+            btnChangePassword.Name = "btnChangePassword";
+            btnChangePassword.Size = new Size(164, 28);
+            btnChangePassword.TabIndex = 15;
+            btnChangePassword.Text = "Change Password";
+            btnChangePassword.UseVisualStyleBackColor = true;
+            btnChangePassword.Click += btnChangePassword_Click;
+            // 
+            // btnViewBilling
+            // 
+            btnViewBilling.Location = new Point(401, 319);
+            btnViewBilling.Name = "btnViewBilling";
+            btnViewBilling.Size = new Size(154, 45);
+            btnViewBilling.TabIndex = 16;
+            btnViewBilling.Text = "View Billing";
+            btnViewBilling.UseVisualStyleBackColor = true;
+            btnViewBilling.Click += btnViewBilling_Click;
+            // 
             // CustomerListForm_Medrano
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(782, 453);
+            Controls.Add(btnViewBilling);
+            Controls.Add(btnChangePassword);
             Controls.Add(statusStrip3);
             Controls.Add(btnManagePermissions);
-            Controls.Add(button1);
             Controls.Add(btnAuditLog);
             Controls.Add(btnExportPDF);
             Controls.Add(btnExportExcel);
@@ -327,7 +343,6 @@
         private Button btnExportExcel;
         private Button btnExportPDF;
         private Button btnAuditLog;
-        private Button button1;
         private Button btnManagePermissions;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel lblStatusUser;
@@ -345,5 +360,7 @@
         private DataGridViewTextBoxColumn Status;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripStatusLabel toolStripStatusLabel2;
+        private Button btnChangePassword;
+        private Button btnViewBilling;
     }
 }

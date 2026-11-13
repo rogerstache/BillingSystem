@@ -261,6 +261,7 @@ namespace BillingSystem
             LoadCustomers();
             ApplyPermissions();
             InitStatusStrip();
+            dgvCustomers.ClearSelection();
         }
         private void ApplyTheme()
         {
@@ -612,6 +613,37 @@ namespace BillingSystem
         private void toolStripStatusLabel2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+            frmChangePassword changePasswordForm = new frmChangePassword(AppSession.CurrentUserID);
+            changePasswordForm.ShowDialog();
+        }
+
+        private void btnViewBilling_Click(object sender, EventArgs e)
+        {
+            if (dgvCustomers.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a customer row first.",
+                    "No Customer Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            DataGridViewRow selectedRow = dgvCustomers.SelectedRows.Count > 0
+                ? dgvCustomers.SelectedRows[0]
+                : dgvCustomers.CurrentRow;
+
+            if (selectedRow == null || selectedRow.Cells["CustomerID"].Value == null || selectedRow.Cells["CustomerID"].Value == DBNull.Value)
+            {
+                MessageBox.Show("Please select a valid customer row first.",
+                    "No Customer Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int selectedCustomerId = Convert.ToInt32(dgvCustomers.SelectedRows[0].Cells["CustomerID"].Value);
+
+            frmBillingHistory billingHistoryForm = new frmBillingHistory(selectedCustomerId);
+            billingHistoryForm.ShowDialog();
         }
     }
 }
